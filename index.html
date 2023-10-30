@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/formulario.js"></script>
+</head>
+<body>
+    <div>
+        <h1 class="title">Lista de Tareas</h1>
+
+        <div>
+            <label for="descripcion">Descripción de la tarea:</label>
+            <input type="text" id="descripcion" class="campo-descripcion">
+        </div>
+            <div>
+                <label for="fecha">Fecha de vencimiento:</label>
+                <input type="date" id="fecha" class="campo-fecha">
+            </div>
+
+            <div>
+                <label for="prioridad">Prioridad:</label>
+                <select id="prioridad" class="select-prioridad">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+           
+            <div>
+                <button onclick="agregarTarea()" class="boton-agregar-tarea">Agregar Tarea</button>
+            
+            
+
+    </div>
+
+        <hr id="separador-tareas"> 
+
+        <h2 class="tarea">Tareas Pendientes</h2>
+        <div id="tareasPendientes" class="lista-tareas"></div>
+    </div>
+</body>
+</html>

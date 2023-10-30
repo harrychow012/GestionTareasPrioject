@@ -1,0 +1,71 @@
+/* Estilos para la estructura de la página */
+body {
+
+    background-color: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.title{
+    text-align: center;
+}
+h1 {
+    background-color: #0074a7;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #ff6a00;
+}
+
+.campo-descripcion{
+    width: 86%;
+    height: 2rem;
+    margin: 10px;
+}
+.campo-fecha{
+    width: 86%;
+    margin: 10px;
+    margin-left: 17px;
+    height: 2rem;
+    
+    
+}
+.select-prioridad{
+    width: 86.2%;
+    margin: 10px;
+    margin-left: 100px;
+    height: 2rem;
+}
+
+.boton-agregar-tarea{
+    background-color: #fff;
+
+    text-align: center;
+    margin-top: 1rem;
+    padding: 15px;
+    cursor: pointer;
+}
+.boton-agregar-tarea:hover {
+    background-color:  rgba(128, 128, 128, 0.37);
+}
+
+.item-tarea {
+
+    border: 1px solid #0074a7;
+    padding: 15px;
+    margin: 20px;
+    text-align: left;
+}
+
+.boton-completar {
+    background-color: #0074a7;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-bottom: 2px solid #ff6a00;
+    transition: all 0.3s;
+}
+
+.boton-completar:hover {
+    background-color: #3d3d55;
+}
