@@ -39,6 +39,17 @@ function mostrarTareasPendientes() {
         `;
         tareasPendientes.appendChild(tareaDiv);
     });
+}
+function marcarComoCompleta(index) {
+    tareas[index].completada = !tareas[index].completada;
+    mostrarTareasPendientes();
+}
+
+function limpiarCampos() {
+    document.getElementById("descripcion").value = "";
+    document.getElementById("fecha").value = "";
+    document.getElementById("prioridad").selectedIndex = 0;
+}
 
 
 document.getElementById("boton-agregar-tarea").addEventListener("click", agregarTarea);
