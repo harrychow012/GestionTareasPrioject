@@ -69,3 +69,25 @@ h1 {
 .boton-completar:hover {
     background-color: #3d3d55;
 }
+.item-tarea {
+
+    border: 1px solid #0074a7;
+    padding: 15px;
+    margin: 20px;
+    text-align: left;
+}
+
+.boton-completar {
+    background-color: #0074a7;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-bottom: 2px solid #ff6a00;
+    transition: all 0.3s;
+}
+
+.boton-completar:hover {
+    background-color: #3d3d55;
+}
