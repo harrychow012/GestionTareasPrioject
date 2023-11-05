@@ -51,7 +51,14 @@ function limpiarCampos() {
     document.getElementById("prioridad").selectedIndex = 0;
 }
 
+const recordatorioInterval = 1 * 60 * 1000; 
 
+function mostrarRecordatorio() {
+    if (tareas.some(tarea => !tarea.completada)) {
+        alert("¡Tarea no realizada!");
+    }
+}
+const recordatorioTimer = setInterval(mostrarRecordatorio, recordatorioInterval);
 document.getElementById("boton-agregar-tarea").addEventListener("click", agregarTarea);
 
 
